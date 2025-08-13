@@ -10970,3 +10970,18 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+.image-collage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.image-collage img {
+  width: calc(25% - 10px); /* 4 images per row */
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
