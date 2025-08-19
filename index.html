@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light"> <!-- Light mode default -->
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <title>Resume - Robin Horsfield</title>
+  <title>Robin Horsfield - Portfolio</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-  <!-- Font Awesome icons -->
+  <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-  <!-- Google fonts-->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
   <!-- Bootstrap CSS -->
   <link href="css/styles.css" rel="stylesheet" />
 
   <style>
-    /* Profile image round fix */
+    /* Profile image */
     .img-profile1 {
       width: 150px;
       height: 150px;
@@ -24,7 +24,22 @@
       border-radius: 50%;
     }
 
-    /* Project thumbnails */
+    /* Hero header */
+    .hero-header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: var(--bs-primary);
+      color: white;
+    }
+    .hero-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero-header p {
+      font-size: 1.25rem;
+    }
+
+    /* Image collage */
     .image-collage img {
       width: 150px;
       margin: 5px;
@@ -36,7 +51,7 @@
       transform: scale(1.05);
     }
 
-    /* Modal image */
+    /* Modal styles */
     .modal-img {
       max-width: 100%;
       border-radius: 10px;
@@ -50,18 +65,18 @@
   </style>
 </head>
 <body id="page-top">
-  <!-- Navigation-->
+
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Robin Horsfield</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile1 mx-auto mb-2" src="assets/img/profile1.jpg" alt="Profile" />
+        <img class="img-fluid img-profile1 mx-auto mb-2" src="assets/img/profile1.jpg" alt="..." />
       </span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
@@ -70,184 +85,131 @@
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
       </ul>
+      <!-- Dark Mode Toggle -->
+      <button class="btn btn-sm btn-light ms-3" id="darkModeToggle">🌙</button>
     </div>
   </nav>
 
-  <!-- Page Content-->
+  <!-- Hero Header -->
+  <header class="hero-header">
+    <h1>Robin Horsfield</h1>
+    <p>Mechanical Engineer & Designer | Maker | Pro Cyclist</p>
+  </header>
+
+  <!-- Page Content -->
   <div class="container-fluid p-0">
 
     <!-- About -->
     <section class="resume-section" id="about">
       <div class="resume-section-content">
-        <h1 class="mb-0">Robin <span class="text-primary">Horsfield</span></h1>
-        <div class="subheading mb-5">
+        <h2 class="mb-0">
+          Robin <span class="text-primary">Horsfield</span>
+        </h2>
+        <div class="subheading mb-3">
           Bermuda · Canada · (705) 791-0519 ·
           <a href="mailto:robinchorsfield@gmail.com">robinchorsfield@gmail.com</a>
         </div>
-        <p class="lead mb-5">
-          I'm a professional mountain biker with a background in mechanical engineering, studied with a strong focus on practical problem solving and design.
-          I was born and raised in Bermuda and my passion for hands-on work extends beyond the trail — woodworking, sewing, and always learning something new.
-        </p>
-        <div class="social-icons">
-          <a class="social-icon" href="https://www.linkedin.com/in/robin-horsfield-0860111ab/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a class="social-icon" href="https://www.instagram.com/robinchorsfield/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <p class="lead mb-3">I'm a professional mountain biker with a background in mechanical engineering...</p>
+        <a class="btn btn-primary" href="assets/RobinHorsfield_Resume.pdf" target="_blank">📄 Download Resume</a>
+        <div class="social-icons mt-3">
+          <a class="social-icon" href="https://www.linkedin.com/in/robin-horsfield-0860111ab/" target="_blank">
+            <i class="fab fa-linkedin-in"></i></a>
+          <a class="social-icon" href="https://www.instagram.com/robinchorsfield/" target="_blank">
+            <i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </section>
     <hr class="m-0" />
 
     <!-- Experience -->
-    <section class="resume-section" id="experience">
-      <div class="resume-section-content">
-        <h2 class="mb-5">Experience</h2>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="flex-grow-1">
-            <h3 class="mb-0">Mechanical Design Engineer</h3>
-            <div class="subheading mb-3">Brandelle Industries Ltd.</div>
-            <p>Designing automation tooling in Solidworks, machining & assembling prototypes, and implementing workflow improvements.</p>
-          </div>
-          <div class="flex-shrink-0"><span class="text-primary">Summer 2021–2023</span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="flex-grow-1">
-            <h3 class="mb-0">Machinist - Co-op</h3>
-            <div class="subheading mb-3">Innovative Automation</div>
-            <p>Worked in all areas of a machine shop with focus on milling machines. All machined parts were used in automation assembly cells.</p>
-          </div>
-          <div class="flex-shrink-0"><span class="text-primary">Sept 2019 - May 2020</span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="flex-grow-1">
-            <h3 class="mb-0">R&D Engineer - Co-op</h3>
-            <div class="subheading mb-3">Canplas Industries</div>
-            <p>Tested grease interceptor baffle designs and ensured compliance with plumbing standards.</p>
-          </div>
-          <div class="flex-shrink-0"><span class="text-primary">May - Sept 2018</span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between">
-          <div class="flex-grow-1">
-            <h3 class="mb-0">Design Intern</h3>
-            <div class="subheading mb-3">Artemis Racing</div>
-            <p>Worked with engineers to improve high-speed carbon sailboats, ensuring smooth motion in customized components.</p>
-          </div>
-          <div class="flex-shrink-0"><span class="text-primary">2008 - 2010</span></div>
-        </div>
-      </div>
-    </section>
-    <hr class="m-0" />
+    <!-- (keep your existing experience section unchanged) -->
 
     <!-- Education -->
-    <section class="resume-section" id="education">
-      <div class="resume-section-content">
-        <h2 class="mb-5">Education</h2>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="flex-grow-1">
-            <h3 class="mb-0">University of Guelph</h3>
-            <div class="subheading mb-3">Bachelor of Mechanical Engineering</div>
-          </div>
-          <div class="flex-shrink-0"><span class="text-primary">Sept 2020 - Apr 2024</span></div>
-        </div>
-
-        <div class="d-flex flex-column flex-md-row justify-content-between">
-          <div class="flex-grow-1">
-            <h3 class="mb-0">Georgian College</h3>
-            <div class="subheading mb-3">Mechanical Engineering Technologist</div>
-          </div>
-          <div class="flex-shrink-0"><span class="text-primary">Sept 2017 - Aug 2020</span></div>
-        </div>
-      </div>
-    </section>
-    <hr class="m-0" />
+    <!-- (keep your existing education section unchanged) -->
 
     <!-- Skills -->
     <section class="resume-section" id="skills">
       <div class="resume-section-content">
         <h2 class="mb-5">Skills</h2>
-        <div class="subheading mb-3">Design Software & Hands-On Skills</div>
-        <ul class="list-inline dev-icons mb-5">
-          <li class="list-inline-item"><img src="assets/Soliworks.png" alt="SolidWorks" title="SolidWorks" style="height: 40px;"></li>
-          <li class="list-inline-item"><img src="assets/Inventor.png" alt="Inventor" title="Inventor" style="height: 40px;"></li>
-          <li class="list-inline-item"><img src="assets/Fusion360.png" alt="Fusion 360" title="Fusion 360" style="height: 40px;"></li>
-          <li class="list-inline-item"><img src="assets/Excel.png" alt="Excel" title="Excel" style="height: 40px;"></li>
-        </ul>
 
-        <div class="subheading mb-3">Assets</div>
+        <div class="subheading mb-3">Technical</div>
+        <p>SolidWorks</p>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-primary" style="width: 90%">Advanced</div>
+        </div>
+        <p>Fusion 360</p>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-primary" style="width: 75%">Intermediate</div>
+        </div>
+        <p>Excel</p>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-primary" style="width: 85%">Advanced</div>
+        </div>
+
+        <div class="subheading mb-3 mt-4">Assets</div>
         <ul class="fa-ul mb-0">
-          <li><span class="fa-li"><i class="fas fa-check"></i></span>Detail oriented</li>
-          <li><span class="fa-li"><i class="fas fa-check"></i></span>Punctual and driven</li>
-          <li><span class="fa-li"><i class="fas fa-check"></i></span>Wood & metal working tools</li>
-          <li><span class="fa-li"><i class="fas fa-check"></i></span>Fast learner</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span> Detail oriented</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span> Punctual and driven</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span> Range of wood and metal working tools</li>
+          <li><span class="fa-li"><i class="fas fa-check"></i></span> Fast learner</li>
         </ul>
       </div>
     </section>
     <hr class="m-0" />
 
     <!-- Interests -->
-    <section class="resume-section" id="interests">
-      <div class="resume-section-content">
-        <h2 class="mb-5">Interests</h2>
-        <p>I enjoy the outdoors and raced as a professional mountain biker chasing my dream.</p>
-        <p class="mb-0">When not on the bike, I indulge in hands-on hobbies like sewing and woodworking.</p>
-      </div>
-    </section>
-    <hr class="m-0" />
+    <!-- (keep your interests section unchanged) -->
 
     <!-- Projects -->
     <section class="resume-section" id="projects">
       <div class="resume-section-content">
         <h2 class="mb-5">Projects</h2>
 
-        <!-- Maple Syrup Bottling -->
+        <!-- Example with narrative -->
         <div class="mb-5">
-          <h3>Automated Maple Syrup Bottling</h3>
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="mb-0">Automated Maple Syrup Bottling</h3>
+            <span class="text-primary">Sept 2019 - Apr 2020</span>
+          </div>
           <div class="subheading mb-1">Arduino-coded pneumatic bottling machine</div>
+          <p><strong>Problem:</strong> </p>
+          <p><strong>Solution:</strong> </p>
+          <p><strong>Outcome:</strong> </p>
           <div class="video-container mt-3">
-            <iframe src="https://www.youtube.com/embed/rRIHZwowGzo" title="Automated Maple syrup bottling and capping machine"
-              frameborder="0" allowfullscreen style="width: 100%; max-width: 640px; height: 360px;">
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/rRIHZwowGzo" style="width:100%;max-width:640px;height:360px;" allowfullscreen></iframe>
           </div>
         </div>
 
-        <!-- Sewing -->
-        <div class="mb-5">
-          <h3>Sewing</h3>
-          <div class="subheading mb-1">Heavy duty sewing using canvas and leather</div>
-          <div class="image-collage mt-3">
-            <img src="assets/sewing1.jpg" alt="Sewing project 1">
-            <img src="assets/sewing2.jpg" alt="Sewing project 2">
-            <img src="assets/sewing3.jpg" alt="Sewing project 3">
-            <img src="assets/sewing4.jpg" alt="Sewing project 4">
-            <img src="assets/sewing5.jpg" alt="Sewing project 5">
-          </div>
-        </div>
+        <!-- (Repeat for sewing, woodworking, coding with blank Problem/Solution/Outcome) -->
 
-        <!-- Woodworking -->
-        <div class="mb-5">
-          <h3>Woodworking</h3>
-          <div class="subheading mb-1">Hobbyist builds (smaller items, limited shop space)</div>
-          <div class="image-collage mt-3">
-            <img src="assets/img/wood1.jpg" alt="Woodworking project 1">
-            <img src="assets/img/wood2.jpg" alt="Woodworking project 2">
-            <img src="assets/img/wood3.jpg" alt="Woodworking project 3">
-            <img src="assets/img/wood4.JPG" alt="Woodworking project 4">
-            <img src="assets/img/wood5.jpg" alt="Woodworking project 5">
-          </div>
-        </div>
-
-        <!-- Coding -->
-        <div class="mb-5">
-          <h3>Coding</h3>
-          <div class="subheading mb-1">Excel-based Inventory Tracker</div>
-          <p>
-            Built a barcode-driven inventory system in Excel that automated printing, tracking, and stock management, reducing manual entry errors.
-          </p>
-        </div>
       </div>
     </section>
+    <hr class="m-0" />
+
+    <!-- Contact -->
+    <section class="resume-section" id="contact">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Contact</h2>
+        <form action="mailto:robinchorsfield@gmail.com" method="post" enctype="text/plain">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+
   </div>
 
   <!-- Modal for image popup -->
@@ -262,10 +224,10 @@
     </div>
   </div>
 
-  <!-- Bootstrap core JS-->
+  <!-- Bootstrap core JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Make all project images clickable for modal
+    // Image modal
     document.querySelectorAll('.image-collage img').forEach(img => {
       img.addEventListener('click', () => {
         document.getElementById("modalImage").src = img.src;
@@ -273,6 +235,19 @@
         const myModal = new bootstrap.Modal(document.getElementById('imageModal'));
         myModal.show();
       });
+    });
+
+    // Dark mode toggle
+    const darkToggle = document.getElementById('darkModeToggle');
+    darkToggle.addEventListener('click', () => {
+      const html = document.querySelector('html');
+      if (html.getAttribute('data-bs-theme') === 'light') {
+        html.setAttribute('data-bs-theme', 'dark');
+        darkToggle.textContent = '☀️';
+      } else {
+        html.setAttribute('data-bs-theme', 'light');
+        darkToggle.textContent = '🌙';
+      }
     });
   </script>
 </body>
