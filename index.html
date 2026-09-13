@@ -28,32 +28,106 @@
       border-radius: 50%;
     }
 
-    /* Image collage */
-    .image-collage img {
+    <style>
+
+  /* Profile image */
+  .img-profile1 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+
+  /* Image collage */
+  .image-collage img {
+    width: 150px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+
+  .image-collage img:hover {
+    transform: scale(1.05);
+  }
+
+
+  /* Modal styles */
+  .modal-img {
+    max-width: 100%;
+    max-height: 75vh;
+    border-radius: 10px;
+  }
+
+  .modal-description {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+  }
+
+
+  /* ==================== EXPERIENCE PHOTOS ==================== */
+
+  .experience-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .experience-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .experience-images {
+    width: 150px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .experience-images img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .experience-images img:hover {
+    transform: scale(1.05);
+  }
+
+
+  /* ==================== MOBILE ==================== */
+
+  @media (max-width: 768px) {
+
+    .experience-content {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .experience-images {
       width: 150px;
-      margin: 5px;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: transform 0.2s;
     }
 
-    .image-collage img:hover {
-      transform: scale(1.05);
+    .experience-images img {
+      width: 150px;
+      height: 120px;
     }
 
-    /* Modal styles */
-    .modal-img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
+  }
 
-    .modal-description {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 1rem;
-      color: #555;
-    }
-  </style>
+</style>
+
 </head>
 
 <body id="page-top">
